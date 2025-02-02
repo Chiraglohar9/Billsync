@@ -63,4 +63,4 @@ This project is licensed under the MIT License.
 
 ## 📧 Contact
 
-For any questions, suggestions, or issues, feel free to reach out via email at 📩 [support@billsync.com](mailto:). We’d love to hear from you! 💬
+For any questions, suggestions, or issues, feel free to reach out via email at 📩 [](mailto:). We’d love to hear from you! 💬
