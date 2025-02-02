@@ -29,12 +29,12 @@ BillSync is an advanced GST billing web application designed to simplify invoici
 
 ## 🛠 Tech Stack
 
-- 🎨 **Frontend**: React.js, Tailwind CSS
-- 🏗 **Backend**: Node.js, Express.js
-- 🗄 **Database**: MongoDB
+- 🎨 **Frontend**: HTML, CSS, Javascript
+- 🏗 **Backend**: Flask, Python
+- 🗄 **Database**: MYSQL, Mysql-Connector
 - 🔒 **Authentication**: JWT-based authentication
 - ☁ **Hosting**: Vercel (Frontend), AWS (Backend & Database)
-- 📊 **Charting & Reporting**: Chart.js, DataTables
+- 📊 **Charting & Reporting**: Matplotlib, DataTables
 
 ## 🔄 How It Works
 
