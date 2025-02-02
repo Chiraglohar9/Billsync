@@ -1,4 +1,4 @@
-# 🌟 BillSync GST Web Application
+# 🌟 BillSync - GST Billing Web Application
 
 ## 📌 Overview
 
