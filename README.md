@@ -52,10 +52,10 @@ BillSync is an advanced GST billing web application designed to simplify invoici
 
 Meet the passionate minds behind BillSync:
 
-- [Team Member 1] – [Role] (Frontend/Backend/Designer, etc.)
-- [Team Member 2] – [Role]
-- [Team Member 3] – [Role]
-- [Team Member 4] – [Role]
+- [Chirag Lohar] – [Leader, Fullstack Developer] (Frontend/Backend/Designer, etc.) – [GitHub](https://github.com/Chiraglohar9)
+- [Mohammad Juned] – [Frontend Devloper] – [GitHub](https://github.com/MohammadJuned-F)
+- [Jay Patel] – [Designer] – [GitHub](https://github.com/jayp12861)
+- [Sahil Lohar] – [Desiger] – [GitHub](https://github.com/Sahillohar20)
 
 ## 📜 License
 
