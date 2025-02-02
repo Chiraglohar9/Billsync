@@ -81,8 +81,6 @@ We are a group of passionate developers and analysts who combined our expertise 
   Description: Led the development of dynamic financial dashboards and reporting tools. Focused on creating insightful reports that empower businesses to make data-driven decisions.  
   🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
 
-Together, we combined our skills in development, design, and data analytics to create a comprehensive and intuitive GST billing solution that helps businesses manage taxes, invoices, and financial data efficiently.
-
 ## 📜 License
 
 This project is licensed under the MIT License.
