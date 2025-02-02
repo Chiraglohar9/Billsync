@@ -57,14 +57,31 @@ Click the link below to download and view the demo video:
 [Download Demo Video](https://github.com/username/repository-name/raw/main/assets/demo-video.mp4)
 
 
-## 👥 Team
+## 👥 Meet the Team
 
-Meet the passionate minds behind BillSync:
+We are a group of passionate developers and analysts who combined our expertise to bring **BillSync** to life:
 
-- [Chirag Lohar] – [Leader, Fullstack Developer] – [GitHub](https://github.com/Chiraglohar9)
-- [Mohammad Juned] – [Frontend Devloper] – [GitHub](https://github.com/MohammadJuned-F)
-- [Jay Patel] – [Designer] – [GitHub](https://github.com/jayp12861)
-- [Sahil Lohar] – [Desiger] – [GitHub](https://github.com/Sahillohar20)
+- **[Chirag Lohar]** – *Full Stack Developerr*  
+  Expertise: Flask, MySql, Ai/Ml  
+  Description: Designed and developed the user interface, ensuring a seamless, responsive, and intuitive experience. Focused on making BillSync visually appealing and user-friendly.  
+  🔗 [GitHub](https://github.com/Chiraglohar9) | 💼 [LinkedIn](https://linkedin.com/in/chirag-lohar)
+
+- **[Team Member 2]** – *Backend Developer*  
+  Expertise: Node.js, Express.js, API Development  
+  Description: Developed and optimized the backend infrastructure, ensuring smooth communication between the frontend and database. Implemented JWT-based authentication for secure access.  
+  🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
+
+- **[Team Member 3]** – *Full Stack Developer*  
+  Expertise: JavaScript (React & Node.js), MongoDB, Cloud Services (AWS)  
+  Description: Worked across both frontend and backend, bridging gaps between design and functionality. Integrated data and optimized the application for scalability and performance.  
+  🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
+
+- **[Team Member 4]** – *Data Analyst / Reporting Specialist*  
+  Expertise: Data Visualization, Chart.js, Financial Analysis  
+  Description: Led the development of dynamic financial dashboards and reporting tools. Focused on creating insightful reports that empower businesses to make data-driven decisions.  
+  🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
+
+Together, we combined our skills in development, design, and data analytics to create a comprehensive and intuitive GST billing solution that helps businesses manage taxes, invoices, and financial data efficiently.
 
 ## 📜 License
 
