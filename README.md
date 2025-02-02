@@ -2,6 +2,8 @@
 
 ## 📌 Overview
 
+![BillSync Logo](https://example.com/logo.png)
+
 BillSync is an advanced GST billing web application designed to simplify invoicing, tax computation, and report generation for businesses. Developed as part of a college group project, it enhances our knowledge of web development, finance, and compliance while offering a seamless user experience.
 
 ## 🎯 Objectives
@@ -47,6 +49,13 @@ BillSync is an advanced GST billing web application designed to simplify invoici
 5️⃣ **Generating Reports** – View real-time sales and expense reports for financial analysis.
 
 6️⃣ **Exporting & Sharing** – Download and share invoices and reports in multiple formats.
+
+## 🎥 Watch the Demo
+
+Click the link below to download and view the demo video:
+
+[Download Demo Video](https://github.com/username/repository-name/raw/main/assets/demo-video.mp4)
+
 
 ## 👥 Team
 
