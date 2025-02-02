@@ -1,60 +1,66 @@
-🌟 BillSync GST Web Application
+# 🌟 BillSync GST Web Application
 
-📌 Overview
+## 📌 Overview
 
 BillSync is an advanced GST billing web application designed to simplify invoicing, tax computation, and report generation for businesses. Developed as part of a college group project, it enhances our knowledge of web development, finance, and compliance while offering a seamless user experience.
 
-🎯 Objectives
+## 🎯 Objectives
 
-Provide businesses with an easy-to-use GST billing solution
+- Provide businesses with an easy-to-use GST billing solution
+- Automate tax calculations to reduce manual effort and errors
+- Enable secure and efficient invoice management
+- Offer data-driven insights with sales and purchase reports
+- Ensure compliance with Indian GST regulations
 
-Automate tax calculations to reduce manual effort and errors
+## 🚀 Features
 
-Enable secure and efficient invoice management
+- ✅ **User Authentication & Role-based Access** – Secure login and user role management
+- ✅ **Invoice Generation & Management** – Create, update, and track invoices efficiently
+- ✅ **GST Calculation & Compliance** – Automated tax computation to ensure accuracy
+- ✅ **Customer & Product Management** – Organize customer and product details seamlessly
+- ✅ **Sales & Purchase Reports** – Generate insightful financial reports
+- ✅ **Export Invoices in PDF Format** – Download and share invoices easily
+- ✅ **Secure Data Storage** – Data encryption and backup for reliability
+- ✅ **Multi-User Support** – Multiple users can collaborate within the system
+- ✅ **Customizable Invoice Templates** – Personalize invoice formats to match business branding
+- ✅ **Real-time Dashboard** – Monitor financial performance at a glance
 
-Offer data-driven insights with sales and purchase reports
+## 🛠 Tech Stack
 
-Ensure compliance with Indian GST regulations
+- 🎨 **Frontend**: React.js, Tailwind CSS
+- 🏗 **Backend**: Node.js, Express.js
+- 🗄 **Database**: MongoDB
+- 🔒 **Authentication**: JWT-based authentication
+- ☁ **Hosting**: Vercel (Frontend), AWS (Backend & Database)
+- 📊 **Charting & Reporting**: Chart.js, DataTables
 
-🚀 Features
+## 🔄 How It Works
 
-✅ User Authentication & Role-based Access – Secure login and user role management✅ Invoice Generation & Management – Create, update, and track invoices efficiently✅ GST Calculation & Compliance – Automated tax computation to ensure accuracy✅ Customer & Product Management – Organize customer and product details seamlessly✅ Sales & Purchase Reports – Generate insightful financial reports✅ Export Invoices in PDF Format – Download and share invoices easily✅ Secure Data Storage – Data encryption and backup for reliability✅ Multi-User Support – Multiple users can collaborate within the system✅ Customizable Invoice Templates – Personalize invoice formats to match business branding✅ Real-time Dashboard – Monitor financial performance at a glance
+1️⃣ **User Registration & Login** – Businesses create an account and set up their profile.
 
-🛠 Tech Stack
+2️⃣ **Adding Products & Customers** – Users input product details and customer information.
 
-🎨 Frontend: React.js, Tailwind CSS
+3️⃣ **Creating Invoices** – Generate invoices by selecting products, tax details, and customer info.
 
-🏗 Backend: Node.js, Express.js
+4️⃣ **Tax Calculation & Compliance** – Automatic GST calculations to ensure tax accuracy.
 
-🗄 Database: MongoDB
+5️⃣ **Generating Reports** – View real-time sales and expense reports for financial analysis.
 
-🔒 Authentication: JWT-based authentication
+6️⃣ **Exporting & Sharing** – Download and share invoices and reports in multiple formats.
 
-☁ Hosting: Vercel (Frontend), AWS (Backend & Database)
-
-📊 Charting & Reporting: Chart.js, DataTables
-
-🔄 How It Works
-
-1️⃣ User Registration & Login – Businesses create an account and set up their profile.2️⃣ Adding Products & Customers – Users input product details and customer information.3️⃣ Creating Invoices – Generate invoices by selecting products, tax details, and customer info.4️⃣ Tax Calculation & Compliance – Automatic GST calculations to ensure tax accuracy.5️⃣ Generating Reports – View real-time sales and expense reports for financial analysis.6️⃣ Exporting & Sharing – Download and share invoices and reports in multiple formats.
-
-👥 Team
+## 👥 Team
 
 Meet the passionate minds behind BillSync:
 
-[Team Member 1] – [Role] (Frontend/Backend/Designer, etc.)
+- [Team Member 1] – [Role] (Frontend/Backend/Designer, etc.)
+- [Team Member 2] – [Role]
+- [Team Member 3] – [Role]
+- [Team Member 4] – [Role]
 
-[Team Member 2] – [Role]
-
-[Team Member 3] – [Role]
-
-[Team Member 4] – [Role]
-
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
-📧 Contact
+## 📧 Contact
 
-For any questions, suggestions, or issues, feel free to reach out via email at 📩 support@billsync.com.We’d love to hear from you! 💬
-
+For any questions, suggestions, or issues, feel free to reach out via email at 📩 [support@billsync.com](mailto:support@billsync.com). We’d love to hear from you! 💬
