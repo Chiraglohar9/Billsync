@@ -54,16 +54,16 @@ BillSync is an advanced GST billing web application designed to simplify invoici
 
 Click the link below to download and view the demo video:
 
-[Download Demo Video](https://github.com/username/repository-name/raw/main/assets/demo-video.mp4)
+[Download Demo Video](https://github.com/Chiraglohar9/Billsync/raw/main/assets/demo-video.mp4)
 
 
 ## 👥 Meet the Team
 
 We are a group of passionate developers and analysts who combined our expertise to bring **BillSync** to life:
 
-- **[Chirag Lohar]** – *Full Stack Developerr*  
+- **[Chirag Lohar]** – *Team Leader / Full Stack Developer / ML Engineer*  
   Expertise: Flask, MySql, Ai/Ml  
-  Description: Designed and developed the user interface, ensuring a seamless, responsive, and intuitive experience. Focused on making BillSync visually appealing and user-friendly.  
+  Description: Leading the development of BillSync, ensures seamless coordination across the team. With expertise in Full Stack development and backend engineering, contributes to both backend architecture and optimizing system performance.  
   🔗 [GitHub](https://github.com/Chiraglohar9) | 💼 [LinkedIn](https://linkedin.com/in/chirag-lohar)
 
 - **[Team Member 2]** – *Backend Developer*  
