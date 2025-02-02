@@ -38,17 +38,17 @@ BillSync is an advanced GST billing web application designed to simplify invoici
 
 ## 🔄 How It Works
 
-1️⃣ **User Registration & Login** – Businesses create an account and set up their profile.
+ - 1️⃣ **User Registration & Login** – Businesses create an account and set up their profile.
 
-2️⃣ **Adding Products & Customers** – Users input product details and customer information.
+ - 2️⃣ **Adding Products & Customers** – Users input product details and customer information.
 
-3️⃣ **Creating Invoices** – Generate invoices by selecting products, tax details, and customer info.
+ - 3️⃣ **Creating Invoices** – Generate invoices by selecting products, tax details, and customer info.
 
-4️⃣ **Tax Calculation & Compliance** – Automatic GST calculations to ensure tax accuracy.
+ - 4️⃣ **Tax Calculation & Compliance** – Automatic GST calculations to ensure tax accuracy.
 
-5️⃣ **Generating Reports** – View real-time sales and expense reports for financial analysis.
+ - 5️⃣ **Generating Reports** – View real-time sales and expense reports for financial analysis.
 
-6️⃣ **Exporting & Sharing** – Download and share invoices and reports in multiple formats.
+ - 6️⃣ **Exporting & Sharing** – Download and share invoices and reports in multiple formats.
 
 ## 🎥 Watch the Demo
 
