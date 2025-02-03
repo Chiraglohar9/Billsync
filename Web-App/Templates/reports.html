@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Settings</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/dashboard.css') }}" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">Billsync</div>
+    <div class="user-profile">
+        <img alt="User Profile" src="https://via.placeholder.com/40"/>
+        <span>Admin</span>
+    </div>
+</div>
+<div class="container">
+    <div class="sidebar">
+        <div>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/invoices">Invoices</a></li>
+                <li><a href="/transactions">Transactions</a></li>
+                <li><a href="/customers">Customers</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/accounts">Accounts</a></li>
+                <li><a href="/reports">Reports</a></li>
+                <li><a href="/settings">Settings</a></li>
+            </ul>
+        </div>
+        <div>
+            <a
+                    href="/login"
+                    style=" display: block; text-align: center; background: #4caf50; color: #fff; padding: 10px; border-radius: 8px; font-weight: 500; text-decoration: none;">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header"></div>
+        <div class="recent-invoices">
+            <h2>Reports</h2>
+        </div>
+        <!-- New Section for Graph -->
+        <div class="graph-section">
+            <h2>Transactions and Payment Methods</h2>
+            <canvas height="200" id="transactionGraph" width="400"></canvas>
+        </div>
+    </div>
+</div>
+<script>
+    // Sample Data
+    const transactionData = {
+      labels: ["Credit Card", "PayPal", "Bank Transfer", "Cash"],
+      datasets: [
+        {
+          label: "Payment Methods",
+          data: [30, 20, 25, 25], // Example percentages
+          backgroundColor: ["#4caf50", "#ff9800", "#2196f3", "#9c27b0"],
+          borderColor: ["#388e3c", "#f57c00", "#1976d2", "#7b1fa2"],
+          borderWidth: 1,
+        },
+      ],
+    };
+
+    const config = {
+      type: "pie", // Change to 'bar', 'line', etc. for different chart types
+      data: transactionData,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: "top",
+          },
+        },
+      },
+    };
+
+    // Render Chart
+    const transactionGraph = document
+      .getElementById("transactionGraph")
+      .getContext("2d");
+    new Chart(transactionGraph, config);
+</script>
+</body>
+</html>
