@@ -70,7 +70,7 @@ We are a group of passionate developers and analysts who combined our expertise 
   Description: Specializes in crafting responsive and user-friendly interfaces. Proficient in designing intuitive UI/UX experiences and integrating frontend with databases. Skilled in optimizing web performance and ensuring seamless user interactions.          
   🔗 [GitHub](https://github.com/MohammadJuned-F) | 💼 [LinkedIn](https://linkedin.com/in/mo-juned-fatavat-67031a242)
 
-- **[Jay Patel]** – *HTML/css/ms office*  
+- **[Jay Patel]** – *designing/Fronted-developer*  
   Expertise: JavaScript, HTML, designing  
   Description: Worked across both frontend and designing, bridging gaps between design and functionality. Integrated data and optimized the application for scalability and performance.  
   🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
