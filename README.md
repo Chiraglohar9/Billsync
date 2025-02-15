@@ -65,10 +65,10 @@ We are a group of passionate developers and analysts who combined our expertise 
   Description: Leading the development of BillSync, ensures seamless coordination across the team. With expertise in Full Stack development and backend engineering, contributes to both backend architecture and optimizing system performance.  
   🔗 [GitHub](https://github.com/Chiraglohar9) | 💼 [LinkedIn](https://linkedin.com/in/chirag-lohar)
 
-- **[Mohammad Juned]** – *Backend Developer*  
-  Expertise: Node.js, Express.js, API Development  
-  Description: Developed and optimized the backend infrastructure, ensuring smooth communication between the frontend and database. Implemented JWT-based authentication for secure access.  
-  🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
+- **[MohammadJuned]** – *co-Leader / Full stack developer / Web Designer*  
+  Expertise: Web designing,Sql Server,Development.  
+  Description: Specializes in crafting responsive and user-friendly interfaces. Proficient in designing intuitive UI/UX experiences and integrating frontend with databases. Skilled in optimizing web performance and ensuring seamless user interactions.
+  🔗 [GitHub](https://github.com/MohammadJuned-F) | 💼 [LinkedIn](https://linkedin.com/in/Mo.Juned Fatavat)
 
 - **[Jay Patel]** – *Full Stack Developer*  
   Expertise: JavaScript (React & Node.js), MongoDB, Cloud Services (AWS)  
