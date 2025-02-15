@@ -13,7 +13,7 @@
     <div class="logo">Billsync</div>
     <div class="user-profile">
         <img alt="User Profile" src="https://via.placeholder.com/40">
-        <span>Admin</span>
+        <h1>Welcome, {{ username }}!</h1>
     </div>
 </div>
 <div class="container">
@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div>
-            <a href="/login"
+            <a href="{{ url_for('auth.logout') }}"
                style="display: block; text-align: center; background: #4caf50; color: #fff; padding: 10px; border-radius: 8px; font-weight: 500; text-decoration: none;">Logout</a>
         </div>
     </div>
