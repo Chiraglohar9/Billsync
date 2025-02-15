@@ -68,6 +68,7 @@ We are a group of passionate developers and analysts who combined our expertise 
 - **[MohammadJuned]** – *co-Leader / Full stack developer / Web Designer*  
   Expertise: Web designing,Sql Server,Development.  
   Description: Specializes in crafting responsive and user-friendly interfaces. Proficient in designing intuitive UI/UX experiences and integrating frontend with databases. Skilled in optimizing web performance and ensuring seamless user interactions.
+  
   🔗 [GitHub](https://github.com/MohammadJuned-F) | 💼 [LinkedIn](https://linkedin.com/in/Mo.Juned Fatavat)
 
 - **[Jay Patel]** – *Full Stack Developer*  
