@@ -2,8 +2,8 @@ from flask import Flask, render_template, redirect, url_for, request, session
 from flask_jwt_extended import JWTManager, create_access_token
 from Controllers.auth_controller import auth_bp
 from Controllers.dashboard_controller import user_bp
-from config import Config
-from Database.db import get_db
+from configuration import Config
+from Database.db_config import get_db
 
 app = Flask(__name__)
 app.config.from_object(Config)

@@ -1,6 +1,8 @@
 from flask import Blueprint, request, render_template, redirect, url_for, session
 from flask_jwt_extended import create_access_token
 from Models.user_model import get_user_by_username, create_user
+from Database.create_user_db import create_user_database
+
 
 auth_bp = Blueprint('auth', __name__)
 
@@ -31,6 +33,7 @@ def signup():
         if get_user_by_username(username):
             return render_template('signup.html', error="User already exists")  # ✅ Show error in UI
         create_user(username, password)
+        db_name = create_user_database(username)  # Create user-specific database
         return redirect(url_for('auth.login'))
 
     return render_template('signup.html')

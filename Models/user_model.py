@@ -1,4 +1,4 @@
-from Database.db import get_db
+from Database.db_config import get_db
 
 def get_user_by_username(username):
     db = get_db()
