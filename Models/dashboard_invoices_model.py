@@ -1,13 +1,32 @@
-from Database.initialize_user_db import initialize_user_database
-def get_invoices(username):
-    conn = initialize_user_database()
-    if conn is None:
-        print("Database connection failed!")
+import mysql.connector
+from flask import session,url_for
+
+# Database Configuration
+DB_HOST = "127.0.0.1"
+DB_USER = "Billsync"
+DB_PASSWORD = "billsync022025"
+
+
+def recent_invoices():
+    username = session.get('user')  # Get logged-in user
+    if not username:
         return []
-    cursor = conn.cursor(dictionary=True)
-    query = "SELECT * FROM Invoices ORDER BY created_at DESC LIMIT 5"
-    cursor.execute(query)
-    invoices = cursor.fetchall()
-    cursor.close()
-    conn.close()
-    return invoices
+
+    db_name = f"user_{username}_db"  # User-specific database
+
+    try:
+        conn = mysql.connector.connect(
+            host=DB_HOST, user=DB_USER, password=DB_PASSWORD, database=db_name
+        )
+        cursor = conn.cursor(dictionary=True)
+
+        query = "SELECT id, customer_id, total_amount, created_at FROM invoices ORDER BY created_at DESC LIMIT 5"
+        cursor.execute(query)
+        invoices = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+        return invoices
+    except mysql.connector.Error as err:
+        print(f"Database Error: {err}")
+        return []
