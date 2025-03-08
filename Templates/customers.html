@@ -20,19 +20,19 @@
     <div class="sidebar">
         <div>
             <h2>Menu</h2>
-            <ul>
-                <li><a href="/dashboard">Dashboard</a></li>
-                <li><a href="/invoices">Invoices</a></li>
-                <li><a href="/transactions">Transactions</a></li>
-                <li><a href="/customers">Customers</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/accounts">Accounts</a></li>
-                <li><a href="/reports">Reports</a></li>
-                <li><a href="/settings">Settings</a></li>
-            </ul>
+           <ul>
+            <li><a href="{{ url_for('user.dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('user.invoices') }}">Invoices</a></li>
+            <li><a href="{{ url_for('user.transactions') }}">Transactions</a></li>
+            <li><a href="{{ url_for('user.customers') }}">Customers</a></li>
+            <li><a href="{{ url_for('user.products') }}">Products</a></li>
+            <li><a href="{{ url_for('user.accounts') }}">Accounts</a></li>
+            <li><a href="{{ url_for('user.reports') }}">Reports</a></li>
+            <li><a href="{{ url_for('user.settings') }}">Settings</a></li>
+          </ul>
         </div>
         <div>
-            <a href="/login"
+            <a href="{{ url_for('auth.logout') }}"
                style="display: block; text-align: center; background: #4caf50; color: #fff; padding: 10px; border-radius: 8px; font-weight: 500; text-decoration: none;">Logout</a>
         </div>
     </div>
