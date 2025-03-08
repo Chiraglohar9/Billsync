@@ -24,7 +24,7 @@ def create_user_database(username):
                             CREATE TABLE IF NOT EXISTS Transactions (
                                 id INT AUTO_INCREMENT PRIMARY KEY,
                                 amount DECIMAL(10,2),
-                                date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                                 description TEXT
                             )
                         """,
@@ -38,9 +38,10 @@ def create_user_database(username):
                         """,
             "Customers": """
                             CREATE TABLE IF NOT EXISTS Customers (
-                                id INT AUTO_INCREMENT PRIMARY KEY,
+                                customer_id INT AUTO_INCREMENT PRIMARY KEY,
                                 name VARCHAR(255),
-                                email VARCHAR(255) UNIQUE
+                                sales DECIMAL(10,2),
+                                pending DECIMAL(10,2)
                             )
                         """,
             "Products": """
