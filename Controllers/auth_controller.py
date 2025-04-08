@@ -15,7 +15,7 @@ def login():
             session['user'] = user['username']
             return redirect(url_for('user.dashboard'))
         return render_template('login.html', error="Invalid credentials")
-    return render_template('login.html')
+    return render_template('Templates/login.html')
 @auth_bp.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == 'POST':
