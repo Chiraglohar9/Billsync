@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Billsync</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Version3/logo/snapedit.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Version3/logo/snapedit.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Version3/css/dashboard.css') }}"/>
+  </head>
+  <body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='Version3/logo/logo_1.png') }}" alt="Billsync" class="logo-img">
+      </div>
+      <div class="nav-section">
+        <a class="nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="{{ url_for('user.invoices') }}" class="nav-item">
+          <i class="fas fa-file-invoice"></i>
+          <span>Invoices</span>
+        </a>
+        <a href="{{ url_for('user.transactions') }}" class="nav-item">
+          <i class="fas fa-exchange-alt"></i>
+          <span>Transactions</span>
+        </a>
+        <a href="{{ url_for('user.customers') }}" class="nav-item">
+          <i class="fas fa-users"></i>
+          <span>Customers</span>
+        </a>
+        <a href="{{ url_for('user.products') }}" class="nav-item">
+          <i class="fas fa-boxes"></i>
+          <span>Products</span>
+        </a>
+        <a href="{{ url_for('user.accounts') }}" class="nav-item">
+          <i class="fas fa-university"></i>
+          <span>Accounts</span>
+        </a>
+        <a href="{{ url_for('user.reports') }}" class="nav-item">
+          <i class="fas fa-file-alt"></i>
+          <span>Reports</span>
+        </a>
+        <a href="{{ url_for('user.settings') }}" class="nav-item">
+          <i class="fas fa-cogs"></i>
+          <span>Settings</span>
+        </a>
+      </div>
+
+      <div class="logout-section">
+        <a href="{{ url_for('auth.logout') }}" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+        
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="greeting">Welcome, {{username}}!</h1>
+
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Find what you need..." />
+        </div>
+
+        <a href="profile.html"><img
+          src="https://i.pravatar.cc/100?img=1"
+          alt="Profile"
+          class="profile-pic"/></a>
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard">
+        <div class="filters-bar">
+          <button class="filter-btn">
+            <i class="fas fa-filter"></i>
+            <span>Filter View</span>
+          </button>
+
+          <div class="filter-btn period-dropdown">
+            <i class="far fa-calendar-alt"></i>
+            <select>
+              <option value="today" >Today</option>
+              <option value="week">Current week</option>
+              <option value="month">Current month</option>
+              <option value="year">Current Year</option>              
+            </select>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <button class="export-btn">
+            <i class="fas fa-receipt"></i>
+            <span>Create Invoice</span>
+          </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-cards">
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Total Issued Invoices</h3>
+              <div class="value">{{ total_issued or 0}}</div>
+            </div>
+            <div class="stat-icon icon-invoice">
+              <i class="fas fa-file-invoice"></i>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Pending Payments</h3>
+              <div class="value">₹ {{ pending_payments or 0}}</div>
+            </div>
+            <div class="stat-icon icon-pending">
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-info">   
+              <h3>Cash</h3>
+              <div class="value">₹ {{ total_invoices.cash or 0}}</div>
+            </div>
+
+            <div class="stat-icon icon-cash">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-info"> 
+              <h3>Bank</h3>
+              <div class="value">₹ {{ total_invoices.non_cash or 0}}</div>
+            </div>
+            <div class="stat-icon icon-bank">
+              <i class="fas fa-bank"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two column dashboard sections -->
+        <div class="dashboard-sections">
+          
+          <!-- Orders History Card -->
+          <div class="dashboard-card">
+            <div class="card-header">
+              <h2 class="card-title">Recent Invoices</h2>
+              <a href="invoices.html" class="more-link">
+                view all <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+
+            <table class="transaction-table">
+              <thead>
+                <tr>
+                  <th>Invoice ID</th>
+                  <th>Customer Name</th>
+                  <th>Invoice Date</th>
+                  <th>Total Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for invoice in invoices %}
+                <tr>
+                  <td><span class="order-id">{{ invoice.id }}</span></td>
+                  <td>{{ invoice.customer_id }}</td>
+                  <td>{{ invoice.created_at }}</td>
+                  <td class="amount">{{ invoice.total_amount }}</td>
+                  <td>
+                    <button class="info-btn">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                  </td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td colspan="4">No recent invoices found.</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Orders History Card -->
+        <div class="dashboard-card">
+          <div class="card-header">
+            <h2 class="card-title">Recent Transactions</h2>
+            <a href="" class="more-link">
+              view all <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Status</th>
+                <th>Timestamp</th>
+                <th>Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="order-id">#FE78923</span></td>
+                <td>
+                  <div class="status status-completed">
+                    <i class="fas fa-check-circle"></i>
+                    Delivered
+                  </div>
+                </td>
+                <td>3/11/2025 at 2:45 PM</td>
+                <td class="amount">₹ 47,000</td>
+                <td>
+                  <button class="info-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="order-id">#FE78922</span></td>
+                <td>
+                  <div class="status status-pending">
+                    <i class="fas fa-clock"></i>
+                    In Progress
+                  </div>
+                </td>
+                <td>3/11/2025 at 1:30 PM</td>
+                <td class="amount">₹ 23,900</td>
+                <td>
+                  <button class="info-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><span class="order-id">#FE78919</span></td>
+                <td>
+                  <div class="status status-failed">
+                    <i class="fas fa-times-circle"></i>
+                    Cancelled
+                  </div>
+                </td>
+                <td>3/10/2025 at 6:12 PM</td>
+                <td class="amount">₹ 35,25</td>
+                <td>
+                  <button class="info-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span class="order-id">#FE78918</span></td>
+                <td>
+                  <div class="status status-completed">
+                    <i class="fas fa-check-circle"></i>
+                    Delivered
+                  </div>
+                </td>
+                <td>3/10/2025 at 3:17 PM</td>
+                <td class="amount">$ 28,75</td>
+                <td>
+                  <button class="info-btn">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script>
+
+      document.getElementById('filterSelect').addEventListener('change', function() {
+        let filterValue = this.value;
+        window.location.href = `/dashboard?filter=${filterValue}`;
+      });
+      
+      // Toggle active class on sidebar navigation
+      document.querySelectorAll(".nav-item").forEach((item) => {
+        item.addEventListener("click", function () {
+          document
+            .querySelector(".nav-item.active")
+            ?.classList.remove("active");
+          this.classList.add("active");
+        });
+      });
+
+
+      // Search functionality
+      document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function () {
+          let filter = this.value.toLowerCase();
+          document.querySelectorAll(".nav-item span").forEach((span) => {
+            let text = span.textContent.toLowerCase();
+            span.parentElement.style.display = text.includes(filter)
+              ? ""
+              : "none";
+          });
+        });
+    </script>
+  </body>
+</html>
