@@ -5,3 +5,10 @@ class Config:
     DB_USER = 'Billsync'
     DB_PASSWORD = 'billsync022025'
     DB_NAME = 'auth'
+    MAIL_SERVER = 'smtp.gmail.com'
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
+    MAIL_USERNAME = 'billsyncmail@gmail.com'
+    MAIL_PASSWORD = 'nnlv bosv dolt eudv'
+    MAIL_DEFAULT_SENDER = ('Billsync', 'billsyncmail@gmail.com')
+    SECURITY_PASSWORD_SALT = 'f47a3b2d9c1e48d6a5b7e6c3a1d8f47b'
