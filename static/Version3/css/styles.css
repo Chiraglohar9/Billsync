@@ -1,0 +1,49 @@
+/* Navbar Styles */
+.navbar ul li a:hover {
+  color: var(--light-green);
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Image Section Styles */
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Contact Us Form Styles */
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--dark-gray);
+}
+
+/* Card Section Styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card-content {
+  padding: 15px;
+}
