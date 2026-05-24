@@ -78,7 +78,7 @@ We are a group of passionate developers and analysts who combined our expertise 
 - **[Sahil Lohar]** – *Data Analyst / Reporting Specialist*  
   Expertise: Data Visualization, Chart.js, Financial Analysis  
   Description: Led the development of dynamic financial dashboards and reporting tools. Focused on creating insightful reports that empower businesses to make data-driven decisions.  
-  🔗 [GitHub](https://github.com/username) | 💼 [LinkedIn](https://linkedin.com/in/username)
+  🔗 [GitHub](https://github.com/Chiraglohar9) | 💼 [LinkedIn](https://linkedin.com/in/username)
 
 ## 📜 License
 
